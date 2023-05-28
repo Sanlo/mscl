@@ -1,0 +1,38 @@
+{
+  "name": "MSCL",
+  "displayName": "PolyWorks MSCL",
+  "description": "PolyWorks MSCL Script Language Extension",
+  "version": "0.0.1",
+  "publisher": "SanloZhang",
+  "icon": "images/logo.png",
+  "engines": {
+    "vscode": "^1.78.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "mscl",
+        "aliases": [
+          "MSCL",
+          "mscl"
+        ],
+        "extensions": [
+          ".pwmacro",
+          "pwxmacro",
+          ".macro"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "mscl",
+        "scopeName": "source.mscl",
+        "path": "./syntaxes/mscl.tmLanguage.json"
+      }
+    ]
+  }
+}

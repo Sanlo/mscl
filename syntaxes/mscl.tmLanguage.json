@@ -1,0 +1,100 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "MSCL Script Language",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comment"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "#command"
+		},
+		{
+			"include": "#variable"
+		},
+		{
+			"include": "#variable_notpramas"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.mscl",
+					"match": "\\b(version|DECLARE|SET|IF|ENDIF|ELSE|ELSEIF|WHILE|ENDWHILE|BREAK|COUNTINUE|SIZE|EXPR|EXPR_I|LOCALIZE|AND|OR)\\b"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.mscl",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.mscl",
+					"match": "\\\\."
+				}
+			]
+		},
+		"comment": {
+			"patterns": [
+				{
+					"name": "comment.line.number-sign.mscl",
+					"match": "#.*"
+				}
+			]
+		},
+		"numbers": {
+			"patterns": [
+				{
+					"name": "constant.numeric.mscl",
+					"match": "\\b([0-9]+)\\b"
+				}
+			]
+		},
+		"command": {
+			"patterns": [
+				{
+					"name": "constant.character.mscl",
+					"match": "\\b[A-Z_ ]{8,}((?=\\()|\n)"
+				}
+			]
+		},
+		"variable": {
+			"patterns": [
+				{
+					"name": "variable.mscl",
+					"begin": "\\(",
+					"end": "\\)",
+					"patterns": [
+						{
+							"name": "string.quoted.double.mscl",
+							"match": "\".*\""
+						},
+						{
+							"name": "variable.mscl",
+							"match": "{\\w*}"
+						}
+					]
+				}
+			]
+		},
+		"variable_notpramas": {
+			"patterns": [
+				{
+					"name": "variable.mscl",
+					"match": "\\$({|\\w)*(}|)"
+				}
+			]
+		}
+	},
+	"scopeName": "source.mscl"
+}
