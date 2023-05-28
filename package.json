@@ -21,7 +21,7 @@
         ],
         "extensions": [
           ".pwmacro",
-          "pwxmacro",
+          ".pwxmacro",
           ".macro"
         ],
         "configuration": "./language-configuration.json"
