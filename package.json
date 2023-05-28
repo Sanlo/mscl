@@ -2,7 +2,7 @@
   "name": "MSCL",
   "displayName": "PolyWorks MSCL",
   "description": "PolyWorks MSCL Script Language Extension",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "publisher": "SanloZhang",
   "icon": "images/logo.png",
   "engines": {

@@ -19,7 +19,7 @@ Currently only code highlighting is supported, code auto-completion and IntelliS
 
 ## Release Notes
 
-### 0.0.1
+### 1.0.0
 
 Initial release
 
