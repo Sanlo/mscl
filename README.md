@@ -10,6 +10,8 @@ The parameters of mscl command will have different hightlight strategy depend on
 
 Result Demo:
 
+![demo](https://raw.githubusercontent.com/Sanlo/mscl/master/images/demo-1.png)
+
 
 ## Known Issues
 
