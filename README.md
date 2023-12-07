@@ -27,4 +27,4 @@ Initial release
 
 **Enjoy!**
 
-WSQ
+WS
