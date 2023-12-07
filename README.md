@@ -26,3 +26,5 @@ Initial release
 ---
 
 **Enjoy!**
+
+WSQ
